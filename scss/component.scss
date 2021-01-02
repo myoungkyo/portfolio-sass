@@ -11,6 +11,37 @@
     .title{
       font-size: $titleFontSizeMid;
     }
+    p.main{
+      line-height: 30px;
+      color: #333;
+      .font{
+        font-family: 'Gaegu', cursive;
+        font-weight: 400;
+      }
+      .font_w{
+        font-family: 'Gaegu', cursive;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+      .fontT{
+        font-family: 'Poor Story', cursive;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 100;
+      }
+      .fontC{
+        color: #666;
+        font-size: 20px;
+      }
+      span{
+        font-size: 26px;
+        display: inline-block;
+        margin: 10px 0;
+        font-weight: 600;
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+    }
     img{
       width: 100%;
     }
@@ -66,6 +97,9 @@
   &.items_2{
     .items{
       flex: 50%;
+      &:first-child{
+        text-align: right;
+      }
     }
   }
 }

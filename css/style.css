@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+/* font-family: 'Poor Story', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+/* font-family: 'Nanum Gothic', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
 html, body {
   height: 100%;
 }
@@ -44,6 +49,43 @@ a:hover {
 
 .box .items .title {
   font-size: 26px;
+}
+
+.box .items p.main {
+  line-height: 30px;
+  color: #333;
+}
+
+.box .items p.main .font {
+  font-family: 'Gaegu', cursive;
+  font-weight: 400;
+}
+
+.box .items p.main .font_w {
+  font-family: 'Gaegu', cursive;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.box .items p.main .fontT {
+  font-family: 'Poor Story', cursive;
+  line-height: 40px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.box .items p.main .fontC {
+  color: #666;
+  font-size: 20px;
+}
+
+.box .items p.main span {
+  font-size: 26px;
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: 600;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .box .items img {
@@ -107,6 +149,10 @@ a:hover {
 
 .box.items_2 .items {
   flex: 50%;
+}
+
+.box.items_2 .items:first-child {
+  text-align: right;
 }
 
 .gbtn {
@@ -608,6 +654,14 @@ body.subpage main .container .inner .box .items .history .section table tr:nth-c
   background: #f4f4f4;
 }
 
+body.subpage main .container .inner .box .items .history .section table tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+body.subpage main .container .inner .box .items .history .section table tr:first-child td {
+  border-top: 1px solid #d5d193;
+}
+
 body.subpage main .container .inner .box .items .history .section table tr td.one {
   width: 30%;
   font-size: 30px;
@@ -795,4 +849,68 @@ body.subpage main .container .inner .pro_box .image .post p {
 
 body.subpage main .container .inner .pro_box .image .post p + span {
   margin-left: 3px;
+}
+
+body.subpage main p.page {
+  text-align: center;
+  margin: 40px 0;
+}
+
+body.subpage main p.page a {
+  color: #666;
+}
+
+body.subpage main p.page a span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #d5d193;
+  color: #99900e;
+}
+
+body.subpage main p.page a span.black {
+  background: rgba(171, 160, 0, 0.7);
+  color: white;
+  font-size: 13px;
+  border: 1px solid #aba000;
+  margin: 0 10px;
+}
+
+body.subpage main p.search {
+  text-align: center;
+  margin: 40px 0;
+  margin-bottom: 15%;
+  margin-left: -88px;
+}
+
+body.subpage main p.search span {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #99900e;
+  margin: 0 15px;
+}
+
+body.subpage main p.search input[type=text], body.subpage main p.search select {
+  padding: 5px;
+  outline: none;
+  border: 1px solid #99900e;
+  color: #99900e;
+}
+
+body.subpage main p.search a {
+  display: inline-block;
+  color: white;
+  background: rgba(171, 160, 0, 0.7);
+  padding: 5px;
+  vertical-align: middle;
+}
+
+body.subpage main p.search a span {
+  margin: 0 15px;
+  color: white;
 }
