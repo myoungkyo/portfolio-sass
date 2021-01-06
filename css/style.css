@@ -57,31 +57,29 @@ a:hover {
 }
 
 .box .items p.main .font {
-  font-family: 'Gaegu', cursive;
   font-weight: 400;
+  line-height: 40px;
 }
 
 .box .items p.main .font_w {
-  font-family: 'Gaegu', cursive;
   margin-top: 0;
   margin-bottom: 40px;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .box .items p.main .fontT {
-  font-family: 'Poor Story', cursive;
   line-height: 40px;
   margin-bottom: 30px;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .box .items p.main .fontC {
   color: #666;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .box .items p.main span {
-  font-size: 26px;
+  font-size: 24px;
   display: inline-block;
   margin: 10px 0;
   font-weight: 600;
@@ -669,6 +667,7 @@ body.subpage main .container .inner .box .items .history .section table tr td.on
   color: black;
   text-align: center;
   font-family: 'Lobster', cursive;
+  border-right: 1px solid rgba(171, 160, 0, 0.2);
 }
 
 body.subpage main .container .inner .box .items .history .section table tr td.two {
